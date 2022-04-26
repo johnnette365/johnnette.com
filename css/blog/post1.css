@@ -4,13 +4,13 @@
     box-sizing: border-box;
 }
 
-/* li {
+li {
     color: white;
     font-size: 17px;
-    letter-spacing: .8px;
-    word-spacing: 2.5px;
-    padding: 5px 0;
-} */
+    /* letter-spacing: .8px; */
+    /* word-spacing: 2.5px; */
+    /* padding: 5px 0; */
+}
 
 a {
     text-decoration: none;
