@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Career</title>
+    <title>Header | Johnnette-Technologies</title>
     <link rel="icon" href="img/logo/logo.webp ">
 
     <link href="http://fonts.cdnfonts.com/css/d-din" rel="stylesheet">
@@ -13,6 +13,7 @@
     <!-- font awesome cdn link -->
     <!-- fa5-$-css  -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+
 
     <style>
         @import url('http://fonts.cdnfonts.com/css/d-din');
@@ -28,8 +29,10 @@
         }
         
         * {
-            font-family: 'D-DIN Condensed', sans-serif;
+            /* font-family: 'D-DIN Condensed', sans-serif;
             font-family: 'D-DIN Exp', sans-serif;
+            font-family: 'D-DIN', sans-serif;
+            */
             font-family: 'D-DIN', sans-serif;
             font-family: d-din;
             padding: 0;
@@ -39,10 +42,6 @@
             box-sizing: border-box;
             outline: none;
             border: none;
-        }
-        
-        body {
-            background-color: black;
         }
         
         header {
@@ -129,7 +128,7 @@
             display: inline-block;
             text-decoration: none;
             font-family: d-din;
-            font-size: 14px;
+            font-size: 15px;
             color: white;
             margin: .5rem 1rem;
             border-radius: .5rem;
@@ -182,6 +181,7 @@
         
         #other-informations {
             height: 150vh;
+            /* width: 280px; */
             width: 310px;
             position: absolute;
             top: 0;
@@ -293,7 +293,7 @@
             opacity: 1;
             transition: all .5s;
         }
-        /* -------------------right navigation submenu end------------------------------------ */
+        /* -------------------right navigation submenu end--------------------- */
         /* header media queries */
         
         @media screen and (min-width: 1440px) {
@@ -321,6 +321,9 @@
         }
         
         @media screen and (max-width: 1000px) {
+            html {
+                font-size: 50%;
+            }
             header .icons {
                 margin-right: 50px;
             }
@@ -333,9 +336,6 @@
             .header .icons {
                 margin-right: 30px;
                 padding-left: 20px;
-            }
-            .navbar ul li a {
-                margin: .5rem .5rem;
             }
         }
         
@@ -399,7 +399,7 @@
         <div class="header_background"></div>
         <div class="inner_header">
             <div id="logo">
-                <a href="index.html" class="logo"><img src="img/logo/logo.png" alt="logo not found" id="logo-image"></a>
+                <a href="index.html" class="logo"><img src="img/logo/logo.png" alt="Johnnette Technologies" id="logo-image"></a>
             </div>
             <nav id="navbar1" class="navbar">
                 <ul>
@@ -429,6 +429,7 @@
             </nav>
         </div>
     </header>
+
 
 
     <script>
