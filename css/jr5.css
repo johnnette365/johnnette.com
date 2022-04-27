@@ -87,6 +87,7 @@ table {
     display: inline;
     text-align: left;
     font-size: 17px;
+    text-transform: uppercase;
 }
 
 .value {
@@ -174,7 +175,6 @@ table {
     text-align: center;
     font-size: 25px;
     color: white;
-    /* text-transform: uppercase; */
     text-transform: capitalize;
 }
 
@@ -316,19 +316,19 @@ table {
     margin-bottom: 20px;
 }
 
-.h_slide1 .column1 .th h3,
-.h_slide2 .column1 .th h3,
-.h_slide3 .column1 .th h3,
-.h_slide4 .column1 .th h3 {
+.h_slide1 .column1 .th h2,
+.h_slide2 .column1 .th h2,
+.h_slide3 .column1 .th h2,
+.h_slide4 .column1 .th h2 {
     /* font-size: 25px; */
     font-size: 40px;
     color: white;
 }
 
-.h_slide1 .column1 .th h2,
-.h_slide2 .column1 .th h2,
-.h_slide3 .column1 .th h2,
-.h_slide4 .column1 .th h2 {
+.h_slide1 .column1 .th h3,
+.h_slide2 .column1 .th h3,
+.h_slide3 .column1 .th h3,
+.h_slide4 .column1 .th h3 {
     font-size: 50px;
     font-weight: bolder;
 }
@@ -422,16 +422,16 @@ table {
         padding-left: 20px;
         padding-right: 20px;
     }
-    .h_slide1 .column1 .th h3,
-    .h_slide2 .column1 .th h3,
-    .h_slide3 .column1 .th h3,
-    .h_slide4 .column1 .th h3 {
-        font-size: 30px;
-    }
     .h_slide1 .column1 .th h2,
     .h_slide2 .column1 .th h2,
     .h_slide3 .column1 .th h2,
     .h_slide4 .column1 .th h2 {
+        font-size: 30px;
+    }
+    .h_slide1 .column1 .th h3,
+    .h_slide2 .column1 .th h3,
+    .h_slide3 .column1 .th h3,
+    .h_slide4 .column1 .th h3 {
         font-size: 30px;
     }
     .swiper-button-next,
@@ -483,17 +483,17 @@ table {
         padding-right: 0px;
         padding-left: 50px;
     }
-    .h_slide1 .column1 .th h3,
-    .h_slide2 .column1 .th h3,
-    .h_slide3 .column1 .th h3,
-    .h_slide4 .column1 .th h3 {
-        font-size: 40px;
-        color: white;
-    }
     .h_slide1 .column1 .th h2,
     .h_slide2 .column1 .th h2,
     .h_slide3 .column1 .th h2,
     .h_slide4 .column1 .th h2 {
+        font-size: 40px;
+        color: white;
+    }
+    .h_slide1 .column1 .th h3,
+    .h_slide2 .column1 .th h3,
+    .h_slide3 .column1 .th h3,
+    .h_slide4 .column1 .th h3 {
         font-size: 40px;
         font-weight: bolder;
     }
