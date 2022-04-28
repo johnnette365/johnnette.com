@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>Contact | Johnnette Technologies</title>
     <link rel="icon" href="img/logo/logo.webp ">
 
-    <link href="http://fonts.cdnfonts.com/css/d-din" rel="stylesheet">
+    <!-- google fonts  -->
+    <!-- <link href="http://fonts.cdnfonts.com/css/d-din" rel="stylesheet"> -->
 
     <!-- font awesome cdn link -->
     <!-- fa5-$-css  -->
@@ -23,23 +24,31 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
         integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-    <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-
     <!-- custom css file link -->
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/contact.css">
 
+    <!-- to link header footer -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+        </script>
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
+
+    <!-- Global css for whole page -->
     <style>
         @font-face {
-        font-family: "d-din";
-        src: url("fonts/D-DIN-Bold.otf");
-        src: url("fonts/D-DIN-Italic.otf");
-        src: url("fonts/D-DINExp.otf");
-        src: url("fonts/D-DINCondensed.otf");
-        src: url("fonts/D-DINCondensed-Bold.otf");
-        src: url("fonts/D-DINExp-Italic.otf");
-        src: url("fonts/D-DIN.otf");
+            font-family: "d-din";
+            src: url("fonts/D-DIN-Bold.otf");
+            src: url("fonts/D-DIN-Italic.otf");
+            src: url("fonts/D-DINExp.otf");
+            src: url("fonts/D-DINCondensed.otf");
+            src: url("fonts/D-DINCondensed-Bold.otf");
+            src: url("fonts/D-DINExp-Italic.otf");
+            src: url("fonts/D-DIN.otf");
         }
 
         * {
@@ -49,7 +58,7 @@
             font-family: d-din;
         }
     </style>
-    
+
     <style>
         .global_reach h2 {
             color: white;
@@ -80,11 +89,11 @@
 
         .country_name ul li {
             color: white;
-            /* font-weight: bolder; */
             font-size: 21px;
             line-height: 45px;
         }
-        .country_name2{
+
+        .country_name2 {
             display: none;
         }
 
@@ -108,14 +117,17 @@
                 font-size: 15px;
             }
         }
+
         @media screen and (max-width: 768px) {
             .country_name {
                 display: none;
             }
-            .country_name2{
+
+            .country_name2 {
                 display: block;
             }
-                .country_name2 {
+
+            .country_name2 {
                 position: static;
                 background-color: rgb(39, 108, 172);
                 background-color: #2e6ab1;
@@ -126,30 +138,35 @@
                 justify-content: center;
             }
 
-            .country_name2 .ul1{
+            .country_name2 .ul1 {
                 padding-top: 10px;
-               padding-right: 100px;
+                padding-right: 100px;
             }
-            .country_name2 .ul2{
+
+            .country_name2 .ul2 {
                 padding-top: 10px;
-               padding-left: 100px;
+                padding-left: 100px;
             }
+
             .country_name2 ul li {
                 line-height: 30px;
                 font-size: 15px;
                 color: white;
             }
         }
+
         @media screen and (max-width: 430px) {
 
-            .country_name2 .ul1{
+            .country_name2 .ul1 {
                 padding-top: 10px;
-               padding-right: 70px;
+                padding-right: 70px;
             }
-            .country_name2 .ul2{
+
+            .country_name2 .ul2 {
                 padding-top: 10px;
-               padding-left: 70px;
+                padding-left: 70px;
             }
+
             .country_name2 ul li {
                 line-height: 30px;
                 font-size: 15px;
@@ -158,113 +175,92 @@
         }
     </style>
     <style>
-        .glabal_presence{
+        .glabal_presence {
             padding: 140px 50px;
         }
-        .glabal_presence .content h2{
+
+        .glabal_presence .content h2 {
             color: white;
             text-align: center;
             font-size: 40px;
             margin-bottom: 70px;
         }
-        .flag{
+
+        .flag {
             display: flex;
             justify-content: space-between;
         }
-        .flag_image{
+
+        .flag_image {
             max-width: 300px;
         }
-        .flag_content p{
+
+        .flag_content p {
             color: white;
             font-size: 16px;
             letter-spacing: 1px;
             word-spacing: 3px;
         }
-        .flag_content p i{
+
+        .flag_content p i {
             color: white;
             font-size: 15px;
         }
+
         @media screen and (max-width: 1100px) {
+
             .flag1,
             .flag2,
-            .flag3{
+            .flag3 {
                 width: 200px;
             }
         }
+
         @media screen and (max-width: 800px) {
-            .glabal_presence{
+            .glabal_presence {
                 padding: 120px 20px;
             }
         }
+
         @media screen and (max-width: 700px) {
-             .glabal_presence{
-                    padding: 90px 20px;
-             }
-            .flag_image{
-            max-width: 400px;
+            .glabal_presence {
+                padding: 90px 20px;
             }
-            .flag{
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
+
+            .flag_image {
+                max-width: 400px;
+            }
+
+            .flag {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
             }
 
             .flag1,
             .flag2,
-            .flag3{
+            .flag3 {
                 width: 100%;
                 display: flex;
                 justify-content: center;
             }
+
             .flag2,
-            .flag3{
+            .flag3 {
                 margin-top: 50px;
             }
         }
     </style>
-    
+
 </head>
 
 <body>
-    
 
-    <header class="header show">
-        <div class="header_background"></div>
-        <div class="inner_header">
-            <div id="logo">
-                <a href="index.html" class="logo"><img src="img/logo/logo.png" alt="logo not found" id="logo-image"></a>
-            </div>
-            <nav id="navbar1" class="navbar">
-                <ul>
-                    <li><a class="nav_link" href="jf2.html">JOHNNETTE JF-2</a></li>
-                    <li><a class="nav_link" href="jf3_vtol.html">JOHNNETTE JF-3 VTOL</a></li>
-                    <li><a class="nav_link" href="jf4.html">JOHNNETTE JF-4</a></li>
-                    <!-- <li><a class="nav_link" href="jr5.html">JOHNNETTE JR-5</a></li> -->
-                </ul>
-            </nav>
-            <div class="icons">
-                <i class="fas fa-bars" style="width: 10px;" id="menu-bar"></i>
-            </div>
-        </div>
-        <div id="other-informations">
-            <nav class="navbar2">
-                <ul>
-                    <li><a href="jf2.html">Johnnette JF-2</a></li>
-                    <li><a href="jf3_vtol.html">JOHNNETTE JF-3 VTOL</a></li>
-                    <li><a href="jf4.html">JOHNNETTE JF-4</a></li>
-                    <!-- <li><a href="jr5.html">JOHNNETTE JR-5</a></li> -->
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="career.html">Career</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="contact.html#global_reach">Global Contact</a></li>
-                    <li><a href="https://www.johnnetteacademy.com/">Johnnette Academy</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <!--== header link ==-->
+    <div id="header"></div>
 
 
-
+    <!--================ banner ================-->
     <section>
         <div class="head_banner">
             <div class="background_img banner img-fluid">
@@ -276,119 +272,95 @@
             </div>
         </div>
     </section>
-
+    <!--========X======== banner ========X========-->
     <br><br><br>
 
 
+    <!--================ contact Information =================-->
     <section class="contact" id="contact">
-            <div class="content">
-                <h2>Contact Info</h2>
-                </p>
-            </div>
-            <div class="containerr">
-                <div class="contactInfo">
-                    <div class="box">
-                        <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
-                        <div class="text">
-                            <h3>Address</h3>
-                            <p>Johnnette Technologies Pvt Ltd <br> WP-11, Sector 71, Near Sapphire International
-                                School <br> Noida - 201307, India</p>
-                        </div>
+        <div class="content">
+            <h2>Contact Info</h2>
+            </p>
+        </div>
+        <div class="containerr">
+            <div class="contactInfo">
+                <div class="box">
+                    <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <div class="text">
+                        <h3>Address</h3>
+                        <p>Johnnette Technologies Pvt Ltd <br> WP-11, Sector 71, Near Sapphire International
+                            School <br> Noida - 201307, India</p>
                     </div>
-                    <div class="box">
-                        <div class="icon"> <i class="fas fa-phone"></i></div>
-                        <div class="text">
-                            <h3>Phone</h3>
-                            <p>+91 7780108418</p>
-                        </div>
+                </div>
+                <div class="box">
+                    <div class="icon"> <i class="fas fa-phone"></i></div>
+                    <div class="text">
+                        <h3>Phone</h3>
+                        <p>+91 7780108418</p>
                     </div>
-                    <div class="box">
-                        <div class="icon"><i class="fas fa-envelope"></i></div>
-                        <div class="text">
-                            <h3>Email</h3>
-                            <p style="text-transform: lowercase;">av@johnnette.com</p>
-                        </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fas fa-envelope"></i></div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p style="text-transform: lowercase;">av@johnnette.com</p>
                     </div>
-                    <div class="box">
-                        <div class="icon"><i class="fas fa-question"></i></div>
-                        <div class="text">
-                            <h3>Got any technical query ? </h3>
-<!--                             <p>Fixedwing : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +91 8072163996 <br>
-                                Multirotor/NPNT : &nbsp;&nbsp; +91 9717845746
-                            </p> -->
-                            <div>
-                                <div style="display: flex; justify-content: space-between; align-items: center;">
-                                    <p>Fixedwing :</p><p>+91 8072163996</p>
-                                </div>
-                                <div style="display: flex; justify-content: space-between; align-items: center;">
-                                    <p>Multirotor/NPNT :</p><p>+91 9717845746</p>
-                                </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fas fa-question"></i></div>
+                    <div class="text">
+                        <h3>Got any technical query ? </h3>
+                        <div>
+                            <div style="display: flex; justify-content: space-between; align-items: center;">
+                                <p>Fixedwing :</p>
+                                <p>+91 8072163996</p>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; align-items: center;">
+                                <p>Multirotor/NPNT :</p>
+                                <p>+91 9717845746</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- <div class="contactForm">
-                    <form action="">
-                        <h2>GET IN TOUCH</h2>
-                        <div class="inputBox">
-                            <input type="text" name="" required="required">
-                            <span>Full Name</span>
-                        </div>
-                        <div class="inputBox">
-                            <input type="email" required="required" style="text-transform: lowercase;">
-                            <span>Email</span>
-                        </div>
-                        <div class="inputBox">
-                            <input type="text" required="required">
-                            <span>Phone Number</span>
-                        </div>
-                        <div class="inputBox">
-                            <textarea name="" required="required"></textarea>
-                            <span>Write Your Query... </span>
-                        </div>
-                        <div class="inputBox">
-                            <input type="submit" name="" value="Submit">
-                        </div>
-                    </form>
-                </div> -->
-                <div class="contactForm">
-                    <form id="my-form" action="https://formspree.io/f/xgednrdk" method="POST">
-                        <h2>GET IN TOUCH</h2>
-                        <div class="inputBox">
-                            <input type="text" name="Name" required="required">
-                            <span>Full Name</span>
-                        </div>
-                        <div class="inputBox">
-                            <input name="Phone Number" type="text" required="required">
-                            <span>Phone Number</span>
-                        </div>
-                        <div class="inputBox">
-                            <input type="email" name="Email Address" required="required" style="text-transform: lowercase;">
-                            <span>Email</span>
-                        </div>
-                        <div class="inputBox">
-                            <textarea name="Message" required="required"></textarea>
-                            <span>Write Your Query... </span>
-                        </div>
-                        <div class="input-button">
-                            <button id="my-form-button">Submit</button>
-                        </div>
-                        <p id="my-form-status"></p>
-                    </form>
-                </div>
             </div>
+            <div class="contactForm">
+                <form id="my-form" action="https://formspree.io/f/xgednrdk" method="POST">
+                    <h2>GET IN TOUCH</h2>
+                    <div class="inputBox">
+                        <input type="text" name="Name" required="required">
+                        <span>Full Name</span>
+                    </div>
+                    <div class="inputBox">
+                        <input name="Phone Number" type="text" required="required">
+                        <span>Phone Number</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="email" name="Email Address" required="required" style="text-transform: lowercase;">
+                        <span>Email</span>
+                    </div>
+                    <div class="inputBox">
+                        <textarea name="Message" required="required"></textarea>
+                        <span>Write Your Query... </span>
+                    </div>
+                    <div class="input-button">
+                        <button id="my-form-button">Submit</button>
+                    </div>
+                    <p id="my-form-status"></p>
+                </form>
+            </div>
+        </div>
     </section>
-
+    <!--========X======== contact Information =========X========-->
     <br><br><br>
-    
-    
-    
-     <section class="world_map" id="global_reach">
+
+
+
+    <!--================ Our Global Reach =================-->
+    <section class="world_map" id="global_reach">
         <div class="global_reach">
             <h2>Our Global Reach</h2>
-             <!-- <br><br><br> -->
             <div class="image_container">
-                <img src="img/contact/MapChart_Map.png" class="img-fluid" alt="">
+                <img src="img/contact/MapChart_Map.png" class="img-fluid" alt="Johnnette Technologies global reachs">
                 <div class="country_name">
                     <ul style="list-style: none;">
                         <li>
@@ -456,9 +428,11 @@
             </div>
         </div>
     </section>
-    
-    
-    
+    <!--========X======== Our Global Reach =========X========-->
+
+
+
+    <!--================ global presence =================-->
     <section class="glabal_presence" id="global_presence">
         <div class="content">
             <h2>Global Presence</h2>
@@ -466,7 +440,7 @@
                 <div class="flag1">
                     <div>
                         <div class="flag_image">
-                            <img src="img/contact/bangladesh.png" class="img-fluid" alt="">
+                            <img src="img/contact/bangladesh.png" class="img-fluid" alt="Bangladesh, East Shewrapara, Mirpur, Dhaka, C/O Johnnette Jones Technologies">
                         </div>
                         <br>
                         <div class="flag_content">
@@ -474,12 +448,14 @@
                                 C/O AlGEO Center <br>
                                 <span style="display: inline-block; margin-top: 0px;">
                                     987, East Shewrapara,
-                                    <br> Mirpur, Dhaka 1216 
-                                <span><br>
-                                <span style="display: inline-block; margin-top: 0px;">
-                                    <br><i class="fas fa-phone"></i> +8801812181284 
-                                    <br><i class="fas fa-phone"></i>  +91-8074611720
-                                <span>
+                                    <br> Mirpur, Dhaka 1216
+                                    <span><br>
+                                        <span style="display: inline-block; margin-top: 0px;">
+                                            <br><i class="fas fa-phone"></i> +8801812181284
+                                            <br><i class="fas fa-phone"></i> +91-8074611720
+                                        </span>
+                                    </span>
+                                </span>
                             </p>
                         </div>
                     </div>
@@ -487,7 +463,7 @@
                 <div class="flag2">
                     <div>
                         <div class="flag_image">
-                            <img src="img/contact/ghana.png" class="img-fluid" alt="">
+                            <img src="img/contact/ghana.png" class="img-fluid" alt="C/O Johnnette Jones Technologies, Ghana Cantonments, Accra, Ghana">
                         </div>
                         <br>
                         <div class="flag_content">
@@ -496,10 +472,12 @@
                                 <span style="display: inline-block; margin-top: 0px;">
                                     P. O. Box CT 3223
                                     <br> Cantonments, Accra, Ghana
-                                <span><br>
-                                <span style="display: inline-block; margin-top: 0px;">
-                                    <br><i class="fas fa-phone"></i> +233 30 296 3619 
-                                <span>
+                                    <span><br>
+                                        <span style="display: inline-block; margin-top: 0px;">
+                                            <br><i class="fas fa-phone"></i> +233 30 296 3619
+                                        </span>
+                                    </span>
+                                </span>
                             </p>
                         </div>
                     </div>
@@ -507,17 +485,17 @@
                 <div class="flag3">
                     <div>
                         <div class="flag_image" style="border: 1px solid gray;">
-                            <img src="img/contact/united-arab-emirates.png" class="img-fluid " alt="">
+                            <img src="img/contact/united-arab-emirates.png" class="img-fluid " alt="Johnnette Middle East, Downtown Dubai, Near Burj Khalifa, Dubai, UAE">
                         </div>
                         <br>
                         <div class="flag_content">
                             <p>
-                                C/O Johnnette Middle East  <br>
+                                C/O Johnnette Middle East <br>
                                 <span style="display: inline-block; margin-top: 0px;">
                                     200, Al Saaha C Wing,
                                     <br> Downtown Dubai,
                                     <br> Near Burj Khalifa, Dubai, UAE
-                                <span><br>
+                                </span>
                             </p>
                         </div>
                     </div>
@@ -525,78 +503,13 @@
             </div>
         </div>
     </section>
+    <!--========X======== global presence =========X========-->
 
-                    
-                    
-    
-<!--     <br><br> -->
-                    
-    <footer class="footer">
-        <div class="footer-left">
-            <div class="left-box">
-                <div class="img">
-                    <a href="index.html">
-                        <img src="img/logo/logo.png" alt="">
-                    </a>
-                </div>
-                <br> <br>
-                <div class="address">
-                    <address> <br> Johnnette Technologies Pvt Ltd <br>
-                        WP-11, Sector 71, Near <br> Sapphire International School <br> Noida - 201307, India
-                        <br> <br> <span style="text-transform: lowercase;"><i class="fa fa-envelope"></i>
-                            contact@johnnette.in </span><br><i class="fas fa-mobile-alt"></i> &nbsp; +91 7780108418 <br>
-                    </address>
-                    <div class="icons">
-                        <div class="fab-icons">
-                            <a href="https://www.facebook.com/JOHNNETTETECHNOLOGIES/" target="_blank" class="fab fa-facebook-f"></a>
-                            <a href="https://www.linkedin.com/company/johnnette-technologies/" target="_blank" class="fab fa-linkedin-in"></a>
-                            <a id="youtube" href="https://www.youtube.com/channel/UCSLaO3SKQs4v4jUIgSacQgg" target="_blank" class="fab fa-youtube" style="color: red;"></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <ul class="footer-right">
-            <li>
-                <ul class="box">
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="about.html#accolades">Accolades</a></li>
-                    <li><a href="about.html#letters">Satisfactory Letters</a></li>
-                    <li><a href="https://www.johnnetteacademy.com/">Johnnette Academy</a></li>
-                    <li><a href="career.html">Career</a></li>
-                    <li><a href="contact.html#global_presence">Global Partners</a></li>
-                </ul>
-            </li>
-            <li>
-                <ul class="box">
-                    <li><a href="contact.html">Contact Us</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="#product_list"><strong style="color: rgb(208, 205, 205); color: #999;">Products</strong></a></li>
-                    <li><a href="jf2.html">Johnnette JF-2</a></li>
-                    <li><a href="jf3_vtol.html">Johnnette JF-3 VTOL</a></li>
-                    <li><a href="jf4.html">Johnnette JF-4</a></li>
-                </ul>
-            </li>
-            <li>
-                <ul class="box">
-                    <li><a href="policy.html">Privacy Policy</a></li>
-                    <li><a href="cookies.html">Cookies Policy</a></li>
-                    <li><a href="terms.html">Terms</a></li>
-                    <li><a href="img/pdf/Johnnette.pdf">Downloads</a></li>
-                    <li><a href="news.html">News & Media Latest Update</a></li>
-                    <li><a href="ethics_code.html">Code of Ethics and Business Conduct</a></li>
-                </ul>
-            </li>
-        </ul>
-        <div class="footer-bottom">&copy; 2022 Johnnette Technologies Pvt Ltd. | All rights reserved. </div>
-    </footer>
-    
-    
 
-    <!-- custom js files -->
-    <script src="js/script.js"></script>
-   
-    
+
+    <!--====== page footer link ======-->
+    <div id="footer"></div>
+
     <script>
         var form = document.getElementById("my-form");
 
