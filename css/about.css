@@ -1,15 +1,15 @@
-/* @import url('http://fonts.cdnfonts.com/css/d-din'); */
+@import url('http://fonts.cdnfonts.com/css/d-din');
 
-  @font-face {
-        font-family: "d-din";
-        src: url("fonts/D-DIN-Bold.otf");
-        src: url("fonts/D-DIN-Italic.otf");
-        src: url("fonts/D-DINExp.otf");
-        src: url("fonts/D-DINCondensed.otf");
-        src: url("fonts/D-DINCondensed-Bold.otf");
-        src: url("fonts/D-DINExp-Italic.otf");
-        src: url("fonts/D-DIN.otf");
-        }
+@font-face {
+    font-family: "d-din";
+    src: url("fonts/D-DIN-Bold.otf");
+    src: url("fonts/D-DIN-Italic.otf");
+    src: url("fonts/D-DINExp.otf");
+    src: url("fonts/D-DINCondensed.otf");
+    src: url("fonts/D-DINCondensed-Bold.otf");
+    src: url("fonts/D-DINExp-Italic.otf");
+    src: url("fonts/D-DIN.otf");
+}
 
 * {
     font-family: 'D-DIN Condensed', sans-serif;
@@ -18,206 +18,163 @@
     font-family: d-din;
 }
 
+
+/* ----------------============== banner ==============-------------------------- */
+
+.banner-container {
+    min-height: 100vh;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    width: 100%;
+    z-index: -33;
+}
+
+.banner {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    z-index: -33;
+}
+
+.banner-title {
+    font-size: 3rem;
+    line-height: 1.2;
+    z-index: -33;
+}
+
+.banner-title span {
+    color: white;
+    z-index: -33;
+}
+
+.banner p {
+    padding: 1rem 0 2rem 0;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    font-weight: 300;
+    word-spacing: 2px;
+    z-index: -33;
+}
+
+.banner1 {
+    display: none;
+}
+
+@media screen and (max-width: 1100px) {
+    .banner1 {
+        display: block;
+    }
+
+    .banner2 {
+        display: none;
+    }
+}
+
+
+/* ----------------============== end of banner ==============-------------------------- */
+
+
+/* ----------------============== mission and vision ==============-------------------------- */
+/* ----------------============== mission and vision ==============-------------------------- */
+
 .box_container {
     position: relative;
-    height: 100vh;
+    background-color: black;
+    padding: 70px 0;
 }
 
 .box_container .about_bottom {
-    position: absolute;
-    top: 20%;
-    left: 10%;
-    width: 80%;
-    overflow: hidden;
-    opacity: 0;
-    transform: translateY(69%);
-    transition: all .2s;
-    transition: opacity 1s, transform 1s;
-}
-
-.box_container.on_screen .about_bottom {
-    opacity: 1;
-    transform: translateY(0);
+    width: 100%;
+    max-width: 98rem;
+    margin: 0 auto;
+    padding: 2rem;
+    z-index: 2;
+    border-radius: 10px;
 }
 
 .box_container .about_bottom .about_content {
-    padding: 20PX;
-    color: black;
     color: white;
-    font-size: 17px;
-    font-weight: 500;
-/*     font-family: 'D-DIN', sans-serif; */
+    font-size: 18px;
+    font-family: 'D-DIN', sans-serif;
     font-family: d-din;
     text-align: left;
     text-transform: none;
-    /* background-color: rgba(255, 255, 255, 0.9); */
-/*     background-color: white; */
+    letter-spacing: 1px;
+    word-spacing: 3px;
 }
 
 .box_container .about_bottom .about_mission {
-    color: black;
-    color: white;
-/*     font-family: 'D-DIN', sans-serif; */
-    font-family: d-din;
     text-align: center;
-    text-transform: none;
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 .vision_header,
-.mission_header{
-/*     font-family: 'D-DIN', sans-serif; */
+.mission_header {
+    color: white;
+    font-family: 'D-DIN', sans-serif;
     font-family: d-din;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 20px 0;
     font-weight: bold;
+    text-align: left;
 }
 
 .vision .header,
-.vision .content,
+.vision_content,
 .mission .header,
-.mission .content {
-    color: black;
+.mission_content {
     color: white;
-/*     font-family: 'D-DIN', sans-serif; */
+    font-family: 'D-DIN', sans-serif;
     font-family: d-din;
-}
-
-.box_container .about_bottom .about_mission .col-md-6 {
-    padding-bottom: 20px;
-}
-
-.box_container .about_bottom .about_mission .col-md-6 .vision {
-    padding: 0 20px 20px 20px;
-/*     background-color: white; */
-}
-
-.box_container .about_bottom .about_mission .col-md-6 .vision .header {
-/*     font-family: 'D-DIN', sans-serif; */
-    font-family: d-din;
-    font-weight: 600;
-    padding-top: 10px;
-    margin-bottom: 50px;
-}
-
-.box_container .about_bottom .about_mission .col-md-6 .mission {
-    padding: 0 20px 20px 20px;
-/*     background-color: white; */
-}
-
-.box_container .about_bottom .about_mission .col-md-6 .mission .header {
-    margin-bottom: 50px;
-    padding-top: 10px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    text-align: left;
 }
 
 
 /* media query */
 
-@media screen and (max-width: 991px) and (min-width: 768px) {
+@media screen and (max-width: 768px) {
     .box_container {
-        position: relative;
-        height: 100vh;
-        margin-bottom: 200px;
+        padding: 20px 0;
+    }
+
+    .box_container .about_bottom .about_mission {
+        margin-top: 20px;
     }
 }
-
-@media screen and (max-width: 767px) and (min-width: 601px) {
-    .box_container {
-        position: relative;
-        height: 100vh;
-        margin-bottom: 285px;
-    }
-    .box_container .about_bottom {
-        top: 15%;
-    }
-}
-
-@media screen and (max-width: 600px) and (min-width: 501px) {
-    .box_container {
-        position: relative;
-        height: 100vh;
-        margin-bottom: 455px;
-    }
-    .box_container .about_bottom {
-        top: 15%;
-    }
-}
-
-@media screen and (max-width: 500px) and (min-width: 414px) {
-    .box_container {
-        position: relative;
-        height: 150vh;
-        margin-bottom: 243px;
-    }
-    .box_container .about_bottom {
-        top: 10%;
-    }
-}
-
-@media screen and (max-width: 413px) and (min-width: 398px) {
-    .box_container {
-        position: relative;
-        height: 150vh;
-        margin-bottom: 265px;
-    }
-    .box_container .about_bottom {
-        top: 10%;
-    }
-}
-
-@media screen and (max-width: 397px) and (min-width: 390px) {
-    .box_container {
-        position: relative;
-        height: 150vh;
-        margin-bottom: 285px;
-    }
-    .box_container .about_bottom {
-        top: 10%;
-    }
-}
-
-@media screen and (max-width: 389px) and (min-width: 375px) {
-    .box_container {
-        position: relative;
-        height: 150vh;
-        margin-bottom: 329px;
-    }
-    .box_container .about_bottom {
-        top: 10%;
-    }
-}
-
-@media screen and (max-width: 374px) and (min-width: 360px) {
-    .box_container {
-        position: relative;
-        height: 150vh;
-        margin-bottom: 393px;
-    }
-    .box_container .about_bottom {
-        top: 10%;
-    }
-}
-
 
 
 /* -------------------------------------=staff----------------------------------------- */
 
 .staff{  
     /* border: 1px solid green;  */
-    margin-top: 120px;
+    padding-top: 120px;
     display: inline-block;
+    background-color: black;
 }
 
 /* .staff .box_1{} */
 
-.staff .box_1 h1,
-.staff .box_2 h1,
-.staff .box_3 h1,
-.staff .box_4 h1{
+.staff .box_1 h4,
+.staff .box_2 h4,
+.staff .box_3 h4,
+.staff .box_4 h4{
     text-align: center; 
     color: white; 
+    font-size: 35px;
     margin-bottom: 70px; 
-    /* border: 1px solid white; */
+}
+.box_1 h4 {
+    text-align: center; 
+    color: white; 
+    font-size: 35px;
+    margin-bottom: 70px; 
 }
 
 .staff .container_box{
@@ -303,12 +260,12 @@
 
 /* ---------------------------------awards----------------------------- */
 .awards{
-    margin-top: 75px;
+    padding-top: 75px;
     display: block;
-/*     background-color: #fff; */
+    background-color: black;
 }
 
-.awards .box_1 h1{
+.awards .box_1 h4{
     text-align: center; 
 /*     color: black;  */
     color: #fff;
@@ -363,10 +320,11 @@
 /* ---------------------------------------------------satisfactory letters------------------------------------- */
 
 .letters{
-    margin-top: 75px;
+    padding-top: 75px;
+    background-color: black;
     display: block;
 }
-.letters .box_1 h1{
+.letters .box_1 h4{
     text-align: center; 
     color: #fff; 
     margin-bottom: 70px; 
