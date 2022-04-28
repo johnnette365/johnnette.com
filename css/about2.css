@@ -898,6 +898,7 @@
     justify-content: center;
     overflow: hidden;
     padding-bottom: 20px;
+    background-color: transparent;
 }
 
 .staff .container_box.four>* {
