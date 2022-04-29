@@ -1,5 +1,4 @@
 @import url('http://fonts.cdnfonts.com/css/d-din');
-
 @font-face {
     font-family: "d-din";
     src: url("fonts/D-DIN-Bold.otf");
@@ -69,7 +68,6 @@
     .banner1 {
         display: block;
     }
-
     .banner2 {
         display: none;
     }
@@ -79,7 +77,6 @@
 /* ----------------============== end of banner ==============-------------------------- */
 
 
-/* ----------------============== mission and vision ==============-------------------------- */
 /* ----------------============== mission and vision ==============-------------------------- */
 
 .box_container {
@@ -137,13 +134,15 @@
 }
 
 
+/* -------=======X======= mission and vision ======X========------ */
+
+
 /* media query */
 
 @media screen and (max-width: 768px) {
     .box_container {
         padding: 20px 0;
     }
-
     .box_container .about_bottom .about_mission {
         margin-top: 20px;
     }
@@ -152,58 +151,50 @@
 
 /* -------------------------------------=staff----------------------------------------- */
 
-.staff{  
-    /* border: 1px solid green;  */
-    padding-top: 120px;
+.staff {
+    padding-top: 0px;
     display: inline-block;
     background-color: black;
 }
 
-/* .staff .box_1{} */
-
-.staff .box_1 h4,
-.staff .box_2 h4,
-.staff .box_3 h4,
-.staff .box_4 h4{
-    text-align: center; 
-    color: white; 
+.box_1 h4,
+.box_2 h4,
+.box_3 h4 {
+    text-align: center;
+    color: white;
     font-size: 35px;
-    margin-bottom: 70px; 
+    padding: 20px 0;
 }
+
 .box_1 h4 {
-    text-align: center; 
-    color: white; 
+    text-align: center;
+    color: white;
     font-size: 35px;
-    margin-bottom: 70px; 
 }
 
-.staff .container_box{
-    display: flex; 
+.staff .container_box {
+    display: flex;
     flex-flow: row wrap;
-    justify-content: space-evenly; 
-    /* border: 1px solid white; */
+    justify-content: space-evenly;
+}
 
-} 
-
-.staff .container_box .card{
+.staff .container_box .card {
     text-align: center;
     margin-bottom: 30px;
-    padding: 30px ;
+    padding: 30px;
+}
 
-} 
-
-.staff .container_box .card-img-top{
+.staff .container_box .card-img-top {
     border-radius: 50%;
-} 
+}
 
-/* .staff .box_1 .advisory_bord .card-body{}  */
-
-.staff .container_box .card-body .card-text{
-    text-align: center; 
-    color: white; 
-    font-size: 17px; 
+.staff .container_box .card-body .card-text {
+    text-align: center;
+    color: white;
+    font-size: 17px;
     margin-top: 20px;
-} 
+}
+
 .staff .container_box .card-body a {
     cursor: pointer;
     font-size: 2rem;
@@ -223,34 +214,30 @@
     transform: rotate(360deg);
 }
 
-/* .box_3 .container_box>* {
-    flex: 1 25%;
-}
-.box_2 .container_box>* {
-    flex: 1 25%;
-} */
-
 @media screen and (min-width: 2000px) {
     .box_3 .container_box>* {
         flex: 1 25%;
     }
     .box_2 .container_box>* {
         flex: 1 25%;
-    } 
+    }
 }
+
 @media screen and (max-width: 2000px) {
     .box_3 .container_box>* {
         flex: 1 33%;
     }
     .box_2 .container_box>* {
         flex: 1 33%;
-    } 
+    }
 }
+
 @media screen and (max-width: 1600px) {
     .box_3 .container_box>* {
         flex: 1 33%;
     }
 }
+
 @media screen and (max-width: 1600px) {
     .box_2 .container_box>* {
         flex: 1 33%;
@@ -259,87 +246,75 @@
 
 
 /* ---------------------------------awards----------------------------- */
-.awards{
-    padding-top: 75px;
+
+.awards {
+    padding-top: 5px;
     display: block;
     background-color: black;
 }
 
-.awards .box_1 h4{
-    text-align: center; 
-/*     color: black;  */
+.awards .box_1 h4 {
+    text-align: center;
     color: #fff;
-    margin-bottom: 70px; 
+    margin-bottom: 70px;
 }
 
-.awards .container_box{
-    display: flex; 
+.awards .container_box {
+    display: flex;
     flex-flow: row wrap;
-    justify-content: space-evenly; 
-    /* border: 1px solid white; */
-} 
-
-.awards .container_box .card{
-    text-align: center; 
-    margin-bottom: 30px;
-    /* padding: 30px ; */
-    /* display: inline; */
-    width: 290px;
-    /* border: 1px solid blue; */
-} 
-
-.awards .container_box .card .card-img-top{
-    /* width: 50%; */
+    justify-content: space-evenly;
 }
 
-.awards .container_box .card .card-body{
+.awards .container_box .card {
+    text-align: center;
+    margin-bottom: 30px;
+    width: 290px;
+}
+
+.awards .container_box .card .card-body {
     margin-top: 20px;
     margin-bottom: 20px;
     display: flex;
     text-align: center;
     justify-content: center;
-    /* border: 1px solid red; */
-} 
+}
 
-.awards .container_box .card .card-body img{
-   width: 30%;
-   height: 30%;
-} 
+.awards .container_box .card .card-body img {
+    width: 30%;
+    height: 30%;
+}
 
-.awards .container_box .card .card-body .card-text{
-/*    color: black */
+.awards .container_box .card .card-body .card-text {
     color: #fff;
-} 
-
-
-
-
-
+}
 
 
 /* ---------------------------------------------------satisfactory letters------------------------------------- */
 
-.letters{
-    padding-top: 75px;
+.letters {
+    padding-top: 5px;
     background-color: black;
     display: block;
 }
-.letters .box_1 h4{
-    text-align: center; 
-    color: #fff; 
-    margin-bottom: 70px; 
+
+.letters .box_1 h4 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 70px;
 }
-.satisfactory_img{
+
+.satisfactory_img {
     width: 90%;
 }
-.letters .container_box{
-    display: flex; 
+
+.letters .container_box {
+    display: flex;
     flex-flow: row wrap;
     padding: 20px;
-    justify-content: space-evenly; 
-} 
+    justify-content: space-evenly;
+}
 
-.letters .container_box .card{
-    text-align: center; 
+.letters .container_box .card {
+    text-align: center;
     margin-bottom: 30px;
 }
