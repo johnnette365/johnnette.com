@@ -108,6 +108,7 @@
 .box_container .about_bottom .about_mission {
     text-align: center;
     margin-top: 40px;
+    text-align: justify;
 }
 
 .vision_header,
@@ -117,7 +118,7 @@
     font-family: d-din;
     padding: 20px 0;
     font-weight: bold;
-    text-align: left;
+    text-align: center;
 }
 
 .vision .header,
@@ -130,7 +131,7 @@
     font-size: 18px;
     letter-spacing: 1px;
     word-spacing: 3px;
-    text-align: left;
+    text-align: justify;
 }
 
 
