@@ -103,6 +103,7 @@
     text-transform: none;
     letter-spacing: 1px;
     word-spacing: 3px;
+    text-align: justify;
 }
 
 .box_container .about_bottom .about_mission {
